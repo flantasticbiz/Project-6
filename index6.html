@@ -27,7 +27,7 @@
         <li><a href="">Blog</a></li>
         <li><a href="">Contact</a></li>
       </ul>
-      <div class="menu" onclick=showMenu()>
+      <div class="menu" >
         <div id="menu-item">
           <ul>
             <li><a href="">Home</a></li>
@@ -262,9 +262,22 @@
     </div>
   </div>
   <script>
-    function showMenu(){
-      const menuBtn = document.getElementsByClassName('menu')
-      menuBtn.style.display = 'block'
+
+    let toggleDbtn = document.querySelector('#dark');
+    let toggleLbtn = document.querySelector('#light');
+    let body = document.querySelector('body');
+
+    toggleDbtn.onclick = function(){    
+
+      if(toggleDbtn.toggle !== 'active'&&toggleDbtn.textContent !== 'Light'){
+        toggleDbtn.classList.toggle('active');
+      body.classList.toggle('dark');
+      toggleDbtn.textContent = 'Light';
+    } else {
+      toggleDbtn.classList.toggle('active');
+      body.classList.toggle('dark');
+      toggleDbtn.textContent = 'Dark';
+      }
     }
   </script>
 </body>
