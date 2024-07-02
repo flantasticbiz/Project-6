@@ -98,10 +98,11 @@
 
     <div class="cont-3">
       <div class="image">
-        <div id="img-3">
-        <!-- <img src="./images/team1.jpg" alt=""> -->
+        <div class="imag">
+          <div id="img-3">
+            <img src="./images/team1.jpg" alt="">
+          </div>
         </div>
-        <div class="purple-box2"></div>
       </div>
       
       <div class="wrapper wrapper-3">
@@ -256,29 +257,11 @@
           <div class="team-6">
             <img src="./images/team4.jpeg" class="team6">
           </div>
-         
         </div>
       </div>
     </div>
   </div>
-  <script>
-
-    let toggleDbtn = document.querySelector('#dark');
-    let toggleLbtn = document.querySelector('#light');
-    let body = document.querySelector('body');
-
-    toggleDbtn.onclick = function(){    
-
-      if(toggleDbtn.toggle !== 'active'&&toggleDbtn.textContent !== 'Light'){
-        toggleDbtn.classList.toggle('active');
-      body.classList.toggle('dark');
-      toggleDbtn.textContent = 'Light';
-    } else {
-      toggleDbtn.classList.toggle('active');
-      body.classList.toggle('dark');
-      toggleDbtn.textContent = 'Dark';
-      }
-    }
-  </script>
+  <script src="pro6.js"></script>   
+  
 </body>
 </html>
